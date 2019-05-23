@@ -42,11 +42,11 @@ class BollingerBands(Indicator):
     lines = ('mid', 'top', 'bot',)
     params = (('period', 20), ('devfactor', 2.0), ('movav', MovAv.Simple),)
 
-    plotinfo = dict(subplot=False)
+    plotinfo = dict(subplot=False, plotvaluetags=False)
     plotlines = dict(
-        mid=dict(ls='--'),
-        top=dict(_samecolor=True),
-        bot=dict(_samecolor=True),
+        mid=dict(ls='--', lw=1.0),
+        top=dict(_samecolor=True, lw=1.0),
+        bot=dict(_samecolor=True, lw=1.0),
     )
 
     def _plotlabel(self):
