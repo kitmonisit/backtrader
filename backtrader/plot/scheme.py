@@ -171,7 +171,7 @@ class PlotScheme(object):
         self.linevalues = True
 
         # Plot a tag at the end of each line with the last value
-        self.valuetags = True
+        self.valuetags = False
 
         # Default color for horizontal lines (see plotinfo.plothlines)
         # self.hlinescolor = '0.66'  # shade of gray
